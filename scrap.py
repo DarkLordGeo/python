@@ -30,9 +30,8 @@ def webInfo():
             }
 
         }
-        # print(webData)
+  
         jsonData = json.dumps(webData, indent=4)
-        
         
         with open('webData.json',  mode='w', encoding='utf-8') as write_file:
             write_file.write(jsonData)
